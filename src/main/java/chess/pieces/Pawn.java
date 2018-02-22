@@ -13,7 +13,7 @@ public class Pawn {
 	this.color = color;
     }
     
-    Color getColor() {
+    public Color getColor() {
 	return color;
     }
 }
