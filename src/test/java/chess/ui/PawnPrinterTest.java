@@ -1,7 +1,7 @@
 package chess.ui;
 
-import chess.pieces.Color;
-import chess.pieces.Pawn;
+import chess.core.pieces.Color;
+import chess.core.pieces.Pawn;
 import junit.framework.TestCase;
 
 public class PawnPrinterTest extends TestCase {

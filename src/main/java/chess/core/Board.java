@@ -1,6 +1,6 @@
-package chess;
+package chess.core;
 
-import chess.pieces.Pawn;
+import chess.core.pieces.Pawn;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

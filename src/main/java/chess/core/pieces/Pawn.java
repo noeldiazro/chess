@@ -1,4 +1,4 @@
-package chess.pieces;
+package chess.core.pieces;
 
 public class Pawn {
     static final Color DEFAULT_COLOR = Color.WHITE;

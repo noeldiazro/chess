@@ -1,7 +1,7 @@
 package chess.ui;
 
-import chess.pieces.Color;
-import chess.pieces.Pawn;
+import chess.core.pieces.Color;
+import chess.core.pieces.Pawn;
 
 class PawnPrinter {
     static final char BLACK_PAWN = 'P';

@@ -1,4 +1,4 @@
-package chess.pieces;
+package chess.core.pieces;
 
 import junit.framework.TestCase;
 

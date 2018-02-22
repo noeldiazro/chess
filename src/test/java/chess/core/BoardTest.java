@@ -1,7 +1,7 @@
-package chess;
+package chess.core;
 
-import chess.pieces.Color;
-import chess.pieces.Pawn;
+import chess.core.pieces.Color;
+import chess.core.pieces.Pawn;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
