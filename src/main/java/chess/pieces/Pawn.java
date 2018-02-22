@@ -1,13 +1,15 @@
-class Pawn {
+package chess.pieces;
+
+public class Pawn {
     static final Color DEFAULT_COLOR = Color.WHITE;
 
     private Color color;
 
-    Pawn() {
+    public Pawn() {
 	this(DEFAULT_COLOR);
     }
     
-    Pawn(Color color) {
+    public Pawn(Color color) {
 	this.color = color;
     }
     
