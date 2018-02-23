@@ -5,14 +5,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-class Rank implements Iterable<Pawn> {
+public class Rank implements Iterable<Pawn> {
+    public static final int CAPACITY = 8;
+    
     private List<Pawn> pawns = new ArrayList<Pawn>();
 
-    int getPieceCount() {
+    public int getPieceCount() {
 	return pawns.size();
     }
 
-    void add(Pawn pawn) {
+    public void add(Pawn pawn) {
 	pawns.add(pawn);
     }
     
