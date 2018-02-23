@@ -14,31 +14,15 @@ public class BoardTest extends TestCase {
 	board = new Board();
     }
     
-    public void testBoardCreation() {
-	assertAddedPawns();
+    public void testBoardIsEmptyOnCreation() {
+	assertEquals(0, board.getPieceCount());
+	assertEquals(0, getPiecesOnBoard().size());
     }
 
-    public void testAddPawnToEmptyBoard() {
-	Pawn pawn = new Pawn(Color.BLACK);
-	board.add(pawn);
-	assertAddedPawns(pawn);
-    }
-
-    public void testAddSeveralPawnsToEmptyBoard() {
-	Pawn blackPawn = new Pawn(Color.BLACK);
-	Pawn whitePawn = new Pawn(Color.WHITE);
-
-	board.add(blackPawn);
-	board.add(whitePawn);
-
-	assertAddedPawns(blackPawn, whitePawn);
-    }
-
-    private void assertAddedPawns(Pawn... expectedPawns) {
-	assertEquals(expectedPawns.length, board.getPieceCount());
-
-	Collection<Pawn> pawnsOnBoard = getPiecesOnBoard();
-	assertTrue(pawnsOnBoard.containsAll(Arrays.asList(expectedPawns)));
+    public void testInitializeBoard() {
+	board.initialize();
+	assertEquals(16, board.getPieceCount());
+	assertEquals(16, getPiecesOnBoard().size());
     }
     
     private Collection<Pawn> getPiecesOnBoard() {

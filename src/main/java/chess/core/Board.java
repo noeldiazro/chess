@@ -12,7 +12,13 @@ class Board implements Iterable<Pawn> {
 	return pawns.size();
     }
 
-    void add(Pawn pawn) {
+    void initialize() {
+	for (int i=0; i < 16; i++) {
+	    add(new Pawn());
+	}
+    }
+
+    private void add(Pawn pawn) {
 	pawns.add(pawn);
     }
 
